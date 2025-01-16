@@ -1,0 +1,297 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "neue-haas-grotesk-display","cofo-sans-mono-variable", sans-serif;
+
+
+
+body {
+    
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centrar el contenido del navbar */
+    align-items: center;
+    padding: 20px;
+    background-color: #1D1E1C; /* Color de fondo oscuro */
+    width: 100%; /* Ocupar el ancho completo */
+}
+
+.containerNav {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.logo {
+    font-size: 24px;
+    font-weight: bold;
+}*/
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar los enlaces */
+    flex-grow: 1; /* Permite que los enlaces ocupen el espacio disponible */
+}
+
+.nav-links li {
+    margin: 0 100px; /* Espaciado horizontal entre los enlaces */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFDF3;
+    font-size: 21px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFFDF3; /* Mantener el color al hacer hover */
+}
+
+/*-----Animación*/
+
+.nav-links li::after {
+    content: ''; /* Crear un pseudo-elemento para la línea */
+    display: block; /* Hacerlo un bloque */
+    width: 100%; /* Ancho del elemento */
+    height: 3px; /* Altura de la línea */
+    background-color: #FFFDF3; /* Color de la línea */
+    position: absolute; /* Posicionarlo de forma absoluta */
+    left: 0; /* Alinear a la izquierda */
+    bottom: -5px; /* Espacio debajo del enlace */
+    transform: scaleX(0); /* Ocultar inicialmente */
+    transition: transform 0.3s; /* Animación suave */
+}
+
+.nav-links li:hover::after {
+    transform: scaleX(1); /* Mostrar la línea al hacer hover */
+}
+
+.nav-links li::before {
+    content: '[01]'; /* Número que aparecerá al hacer hover */
+    position: absolute; /* Posicionarlo de forma absoluta */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar para centrar */
+    bottom: -25px; /* Ajustar la posición debajo del enlace */
+    opacity: 0; /* Ocultar inicialmente */
+    transition: opacity 0.3s; /* Animación suave */
+}
+
+.nav-links li:hover::before {
+    opacity: 1; /* Mostrar el número al hacer hover */
+}
+
+
+
+/*-----Fin animación*/
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #1D1E1C;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 150px;
+    margin-bottom: 10px;
+    color: #FFFDF3;
+}
+
+.hero-subtitle {
+    font-weight: 200;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFFDF3;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #1D1E1C; /* Color del texto */
+    background-color: #FFFDF3; /* Color de fondo */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Añadido efecto de transición para el color del texto */
+}
+
+.hero-button:hover {
+    background-color: #444; /* Color de fondo al pasar el mouse */
+    color: #FFFDF3; /* Cambia el color del texto al pasar el mouse */
+    text-decoration: none;
+}}
+
+
+/*----- Sección About Me -----*/
+
+.about-me {
+    display: flex;
+    justify-content: space-between; /* Espacio entre columnas */
+    padding: 40px;
+    background-color: #f7f7f7; /* Color de fondo de la sección */
+    
+}
+
+.about-content {
+    flex: 1; /* Ocupa el 50% del ancho de la sección */
+    padding-right: 400px; /* Espaciado a la derecha */
+
+}
+
+.about-image {
+    flex: 1; /* Ocupa el 50% del ancho de la sección */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    font-weight: 700;
+    
+}
+
+.about-image img {
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+}
+
+.decorative-line {
+    border: none;
+    height: 3px;
+    background-color: #1D1E1C; /* Color de la línea decorativa */
+    margin: 20px 0; /* Espaciado arriba y abajo de la línea */
+}
+
+.subtitulo{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+
+.lectura{
+    font-family: "cofo-sans-mono-variable";
+    font-weight: 10;
+    font-size: 20px;
+    color: #838383;
+}
+
+.subtitulosIconos{
+
+    font-size: 27px;
+    font-weight: 700;
+    color: #1D1E1C;
+}
+
+.icons {
+    display: flex;
+    justify-content: start; /* Alinear los íconos a la izquierda */
+    margin-top: 20px; /* Espacio superior para los íconos */
+}
+
+.icon {
+    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 15px; /* Espaciado entre los íconos */
+}
+
+.icon2 {
+    margin-right: 15px; /* Espaciado entre los íconos */
+    width: 40px; /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción */
+}
+
+.iconSkills{
+
+    margin-right: 40px; /* Espaciado entre los íconos */
+    width: 20px; /* Ajusta el ancho */
+    height: auto; /* Mantiene la proporción */
+
+}
+
+/*----- WORKS SECTION -----*/
+
+.works-section {
+    display: flex;
+    background-color: #f7f7f7; /* Fondo gris claro */
+}
+
+.works-image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centrar imagen horizontalmente */
+    align-items: center; /* Centrar imagen verticalmente */
+}
+
+.works-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc; /* Borde gris claro para las imágenes */
+}
+
+.works-list {
+    flex: 1;
+    padding: 20px;
+}
+
+.works-list ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 10px;
+    border: none; /* Sin borde para el acordeón */
+    margin-bottom: 10px;
+    font-family: "cofo-sans-mono-variable"; /* Tipografía específica */
+    background-color: #ffffff; /* Fondo blanco para los ítems */
+    transition: background-color 0.3s;
+}
+
+.accordion:hover {
+    background-color: #1D1E1C; /* Fondo oscuro al pasar el ratón */
+    color: #f7f7f7; /* Color de texto blanco al pasar el ratón */
+}
+
+.accordion-content {
+    display: none; /* Ocultar contenido por defecto */
+    padding: 10px;
+}
+
+hr.decorative-line {
+    border: 1px solid #ccc; /* Línea decorativa gris claro */
+}
+
+.project-info {
+    text-align: center;
+}
+
+#project-button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Fondo azul para el botón */
+    color: white; /* Texto blanco en el botón */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s;
+}
+
+#project-button:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
+}
