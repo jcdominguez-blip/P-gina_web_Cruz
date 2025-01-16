@@ -225,6 +225,14 @@ body {
 
 /*----- WORKS SECTION -----*/
 
+.work {
+  
+    
+    padding: 40px;
+    background-color: #f7f7f7; /* Color de fondo de la sección */   
+
+}
+
 .works-section {
     display: flex;
     background-color: #f7f7f7; /* Fondo gris claro */
@@ -260,7 +268,7 @@ body {
     border: none; /* Sin borde para el acordeón */
     margin-bottom: 10px;
     font-family: "cofo-sans-mono-variable"; /* Tipografía específica */
-    background-color: #ffffff; /* Fondo blanco para los ítems */
+    background-color: #f7f7f7; /* Fondo blanco para los ítems */
     transition: background-color 0.3s;
 }
 
@@ -275,7 +283,7 @@ body {
 }
 
 hr.decorative-line {
-    border: 1px solid #ccc; /* Línea decorativa gris claro */
+    border: 1px solid #f7f7f7; /* Línea decorativa gris claro */
 }
 
 .project-info {
@@ -285,7 +293,7 @@ hr.decorative-line {
 #project-button {
     padding: 10px 20px;
     background-color: #007BFF; /* Fondo azul para el botón */
-    color: white; /* Texto blanco en el botón */
+    color: #f7f7f7; /* Texto blanco en el botón */
     border: none;
     cursor: pointer;
     border-radius: 5px; /* Bordes redondeados */
