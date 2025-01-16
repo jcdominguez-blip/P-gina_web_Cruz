@@ -173,8 +173,8 @@ body {
 
 .decorative-line {
     border: none;
-    height: 3px;
-    background-color: #1D1E1C; /* Color de la línea decorativa */
+    height: 2px;
+    background-color: #585858; /* Color de la línea decorativa */
     margin: 20px 0; /* Espaciado arriba y abajo de la línea */
 }
 
@@ -260,14 +260,27 @@ body {
 .works-list ul {
     list-style-type: none; /* Sin viñetas */
     padding: 0;
+    
+}
+
+.works-list .accordion span {
+    font-family: "neue-haas-grotesk-display"; /* Tipografía específica */
+    font-size: 27px;
+    font-weight: 400;
+    color: #1D1E1C; /* Cambia el color del texto según tu diseño */
+}
+
+.works-list .accordion span:hover {
+    color: #f7f7f7; /* Cambia el color al pasar el ratón */
+    text-decoration: underline; /* Subrayar el texto al pasar el ratón (opcional) */
 }
 
 .accordion {
+   
     cursor: pointer;
     padding: 10px;
     border: none; /* Sin borde para el acordeón */
     margin-bottom: 10px;
-    font-family: "cofo-sans-mono-variable"; /* Tipografía específica */
     background-color: #f7f7f7; /* Fondo blanco para los ítems */
     transition: background-color 0.3s;
 }
@@ -280,6 +293,7 @@ body {
 .accordion-content {
     display: none; /* Ocultar contenido por defecto */
     padding: 10px;
+    
 }
 
 hr.decorative-line {
@@ -292,7 +306,7 @@ hr.decorative-line {
 
 #project-button {
     padding: 10px 20px;
-    background-color: #007BFF; /* Fondo azul para el botón */
+    background-color: #1D1E1C; /* Fondo azul para el botón */
     color: #f7f7f7; /* Texto blanco en el botón */
     border: none;
     cursor: pointer;
@@ -301,5 +315,5 @@ hr.decorative-line {
 }
 
 #project-button:hover {
-    background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón */
+    background-color: #696969; /* Fondo azul oscuro al pasar el ratón */
 }

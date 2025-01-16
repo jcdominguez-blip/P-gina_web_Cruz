@@ -24,3 +24,7 @@ function toggleAccordion(element) {
     projectTitle.textContent = title;
     projectDescription.textContent = description;
 }
+
+function changeContent(element) {
+    document.getElementById('project-description').innerText = element.getAttribute('data-description');
+}
