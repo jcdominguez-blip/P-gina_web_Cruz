@@ -69,3 +69,10 @@ function toggleAccordion(element) {
         content.style.display = "block";
     }
 }
+
+//responsive hamburguer funcion//
+
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active'); // Alterna la clase para mostrar/ocultar el menú
+});

@@ -13,6 +13,7 @@ body {
 }
 
 .navbar {
+    flex-direction: row; /* Asegura que los elementos estén en fila *
     display: flex;
     justify-content: center; /* Centrar el contenido del navbar */
     align-items: center;
@@ -35,7 +36,7 @@ body {
     font-weight: bold;
 }*/
 
-.nav-links {
+.nav-links {    
     list-style: none;
     display: flex;
     justify-content: center; /* Centrar los enlaces */
@@ -89,8 +90,6 @@ body {
 .nav-links li:hover::before {
     opacity: 1; /* Mostrar el número al hacer hover */
 }
-
-
 
 /*-----Fin animación*/
 
@@ -323,5 +322,68 @@ hr.decorative-line {
     background-color: #696969; /* Fondo azul oscuro al pasar el ratón */
 }
 
+/*-----responsive menu*/
+
+/* Estilo para el botón de menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Estilos de las barras del menú hamburguesa */
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #FFFDF3;
+    margin: 3px 0;
+}
+/* Media query para dispositivos móviles */
+@media (max-width: 390px) {
+    .nav-links {
+        display: none; /* Ocultar menú en móviles */
+        flex-direction: column; /* Alinear enlaces verticalmente */
+        position: absolute; /* Posicionar el menú */
+        background-color: #f7f7f7; /* Fondo del menú */
+        top: 60px; /* Ubicar debajo de la navbar */
+        right: 0;
+        width: 100%; /* Ocupar todo el ancho */
+        padding: 10px 0; /* Espaciado en el menú */
+        
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostrar menú cuando está activo */
+    }
+
+    .nav-links a {
+        color: #1D1E1C; /* Color del texto cuando el menú está oculto */
+        font-size: 18px; /* Ajusta el tamaño de la fuente si es necesario */
+        padding: 10px; /* Espaciado interno para los enlaces */
+        transition: color 0.3s; /* Suave transición de color */
+    }
+
+    .nav-links.active a:hover {
+        color: #686868; /* Color al pasar el ratón sobre los enlaces en el menú activo */
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el botón en móvil */
+    }
 
 
+    .hero-title {
+        font-size: 110px;
+        
+    }
+
+    .lectura {
+        font-family: "cofo-sans-mono-variable";
+        font-weight: 10;
+        font-size: 17px;
+        color: #838383;
+        
+    }
+
+    
+}
