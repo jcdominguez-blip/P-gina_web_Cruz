@@ -250,6 +250,7 @@ body {
     max-width: 100%;
     height: auto;
     border: 2px solid #ccc; /* Borde gris claro para las imágenes */
+    transition: opacity 0.5s ease-in-out;
 }
 
 .works-list {
@@ -265,7 +266,7 @@ body {
 
 .works-list .accordion span {
     font-family: "neue-haas-grotesk-display"; /* Tipografía específica */
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 400;
     color: #1D1E1C; /* Cambia el color del texto según tu diseño */
 }
@@ -296,6 +297,10 @@ body {
     
 }
 
+.accordion.active + .accordion-content {
+    display: block; /* Mostramos el contenido si el acordeón está activo */
+}
+
 hr.decorative-line {
     border: 1px solid #f7f7f7; /* Línea decorativa gris claro */
 }
@@ -317,3 +322,6 @@ hr.decorative-line {
 #project-button:hover {
     background-color: #696969; /* Fondo azul oscuro al pasar el ratón */
 }
+
+
+
