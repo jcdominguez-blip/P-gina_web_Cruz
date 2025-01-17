@@ -340,6 +340,29 @@ hr.decorative-line {
 }
 /* Media query para dispositivos móviles */
 @media (max-width: 390px) {
+
+
+    .works-section {
+        flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+        align-items: center; /* Centrar contenido */
+    }
+
+    .works-image {
+        order: 1; /* Asegurar que la imagen esté primero */
+        width: 100%; /* Hacer que la imagen ocupe todo el ancho */
+        text-align: center; /* Centrar la imagen */
+    }
+
+    .works-list {
+        order: 2; /* Asegurar que la lista esté debajo de la imagen */
+        width: 100%; /* Hacer que la lista ocupe todo el ancho */
+    }
+
+    .works-image img {
+        max-width: 100%; /* Asegurar que la imagen no se desborde */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
     .nav-links {
         display: none; /* Ocultar menú en móviles */
         flex-direction: column; /* Alinear enlaces verticalmente */
