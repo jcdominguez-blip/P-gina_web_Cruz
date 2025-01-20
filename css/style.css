@@ -339,9 +339,9 @@ hr.decorative-line {
     margin: 3px 0;
 }
 /* Media query para dispositivos móviles */
-@media (max-width: 390px) {
-
-
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) { /* Abarca más dispositivos móviles */
+    
     .works-section {
         flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
         align-items: center; /* Centrar contenido */
@@ -372,7 +372,6 @@ hr.decorative-line {
         right: 0;
         width: 100%; /* Ocupar todo el ancho */
         padding: 10px 0; /* Espaciado en el menú */
-        
     }
 
     .nav-links.active {
@@ -394,19 +393,14 @@ hr.decorative-line {
         display: flex; /* Mostrar el botón en móvil */
     }
 
-
     .hero-title {
-        font-size: 110px;
-        
+        font-size: 90px; /* Ajustar tamaño para móviles */
     }
 
     .lectura {
         font-family: "cofo-sans-mono-variable";
-        font-weight: 10;
-        font-size: 17px;
+        font-weight: 400; /* Ajustar peso para mejor legibilidad */
+        font-size: 14px; /* Ajustar tamaño para móviles */
         color: #838383;
-        
     }
-
-    
 }
