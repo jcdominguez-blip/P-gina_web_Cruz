@@ -490,4 +490,24 @@ hr.decorative-line {
         font-size: 14px; /* Ajustar tamaño para móviles */
         color: #838383;
     }
+
+    .footer {
+        flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+        align-items: center; /* Centrar el contenido */
+        text-align: center; /* Centrar texto */
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        width: 100%; /* Ancho completo para cada sección */
+        margin-bottom: 10px; /* Espaciado entre secciones */
+    }
+
+    .social-links {
+        flex-direction: column; /* Alinear enlaces verticalmente */
+        gap: 10px; /* Espacio entre enlaces */
+    }
+
+    .footer-right {
+        align-items: center; /* Centrar contenido en móviles */
+    }
 }
