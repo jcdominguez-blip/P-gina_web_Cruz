@@ -76,3 +76,15 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
     const navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('active'); // Alterna la clase para mostrar/ocultar el menú
 });
+
+//footer-clock//
+
+
+        function updateClock() {
+            const now = new Date();
+            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            document.getElementById('clock').textContent = now.toLocaleTimeString('es-AR', options);
+        }
+        setInterval(updateClock, 1000);
+        updateClock(); // Update clock immediately on load
+  

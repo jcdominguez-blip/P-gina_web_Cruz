@@ -4,7 +4,7 @@
         box-sizing: border-box;
         font-family: "neue-haas-grotesk-display","cofo-sans-mono-variable", sans-serif;
 
-
+    
 
 body {
     
@@ -57,6 +57,10 @@ body {
 .nav-links a:hover {
     color: #FFFDF3; /* Mantener el color al hacer hover */
 }
+
+
+
+
 
 /*-----Animación*/
 
@@ -172,8 +176,8 @@ body {
 
 .decorative-line {
     border: none;
-    height: 2px;
-    background-color: #585858; /* Color de la línea decorativa */
+    height: 1px;
+    background-color: #979797; /* Color de la línea decorativa */
     margin: 20px 0; /* Espaciado arriba y abajo de la línea */
 }
 
@@ -338,7 +342,90 @@ hr.decorative-line {
     background-color: #FFFDF3;
     margin: 3px 0;
 }
-/* Media query para dispositivos móviles */
+
+
+
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+}
+
+.footer-left, .footer-center, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left span, .footer-right span {
+    margin-left: 5px;
+}
+
+.footer-center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+.social-link {
+    text-decoration: none;
+    color: #838383;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+    vertical-align: middle;
+    color: #838383;
+}
+
+.footer-right {
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: flex-end; /* Alinear a la derecha */
+}
+
+.footer-right .copyright {
+    font-family: "cofo-sans-mono-variable";
+    font-weight:600; /* Negrita */
+    color: #838383;
+    font-size: 18px;
+}
+
+.footer-right .year {
+    font-family: "cofo-sans-mono-variable";
+    font-weight: 400; 
+    color: #838383;
+    margin-top: 1px; /* Espacio entre copyright y año */
+}
+
+.text-footer{
+
+    font-family: "cofo-sans-mono-variable";
+    color: #838383;
+
+}
+
+.clock {
+    font-family: "cofo-sans-mono-variable";
+    font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #838383;
+}
+
+
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) { /* Abarca más dispositivos móviles */
     
