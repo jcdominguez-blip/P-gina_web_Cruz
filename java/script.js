@@ -56,7 +56,7 @@ function toggleAccordion(element) {
         
         // Reiniciar el intervalo si ya hay uno
         if (intervalId) clearInterval(intervalId);
-        intervalId = setInterval(changeImage, 3000); // Cambia la imagen cada 3 segundos
+        intervalId = setInterval(changeImage, 2000); // Cambia la imagen cada 2 segundos
     } else {
         // Si se desactiva, puedes detener el intervalo
         clearInterval(intervalId);
