@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tipografía-->
+    <link rel="stylesheet" href="https://use.typekit.net/dfq7pmd.css">
+    <!--Style-->
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/stylebrand.css"> 
+    <!--ICONOS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>[01] Brand design</title>
+</head>
+<body>
+
+<!--Navbar-->
+
+    <nav class="navbar-brand">
+        <div class="containerNav">
+           <div class="logo">Studio Cruz</div>
+            <!-- responsive hamburguer menu CSS -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!--<div class="logo">Logo</div>-->
+            <ul class="nav-links-brands" id="nav-links">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+<!--Galería-->
+<section class="work-brand">
+    <h2 class="subtitulo">[01] Brand design</h2>
+    <div class="works-section-brand d-flex">
+        <div class="works-list-brand col-md-4">
+            <ul>
+                <li>
+                    <div class="accordion" onclick="showProjectDetails(this)">
+                        <span class="titulo-proyecto" data-title="Título del Proyecto 1" data-description="Proyectos de identidad de marca con alto rendimiento y calidad gráfica." data-images='["https://i.ibb.co/5s3XFry/example1.jpg", "https://i.ibb.co/wyvzbSX/example1.jpg", "https://i.ibb.co/PYZnn8v/example3.jpg", "https://i.ibb.co/PYZnn8v/example3.jpg", "https://i.ibb.co/PYZnn8v/example3.jpg"]'>
+                            [01] SUUAM                                                          
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="lectura">Proyectos de identidad de marca con alto rendimiento y calidad gráfica.</p>
+                    </div>
+                    <hr class="decorative-line">
+                </li>
+                <li>
+                    <div class="accordion" onclick="showProjectDetails(this)">
+                        <span class="titulo-proyecto" data-title="Título del Proyecto 2" data-description="Descripción del Proyecto 2" data-images='["https://i.ibb.co/zSvgVPG/example4.jpg", "https://i.ibb.co/J22GW3b/example-PD2.jpg", "https://i.ibb.co/wNbbtGP/example-PD1.jpg"]'>
+                            [02] Trenes Argentinos Cargas                                 
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="lectura">Descripción del Proyecto 2</p>
+                    </div>
+                    <hr class="decorative-line">
+                </li>
+                <li>
+                    <div class="accordion" onclick="showProjectDetails(this)">
+                        <span class="titulo-proyecto" data-title="Título del Proyecto 3" data-description="Descripción del Proyecto 3" data-images='["https://i.ibb.co/V9zJH9M/FE3.jpg", "https://i.ibb.co/XVWXFKP/FE1.jpg", "https://i.ibb.co/j511Nrg/FE2.jpg"]'>
+                            [03] Prisma
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="lectura">Descripción del Proyecto 3</p>
+                    </div>
+                    <hr class="decorative-line">
+                </li>
+
+                <li>
+                    <div class="accordion" onclick="showProjectDetails(this)">
+                        <span class="titulo-proyecto" data-title="Título del Proyecto 3" data-description="Descripción del Proyecto 3" data-images='["https://i.ibb.co/V9zJH9M/FE3.jpg", "https://i.ibb.co/XVWXFKP/FE1.jpg", "https://i.ibb.co/j511Nrg/FE2.jpg"]'>
+                            [04] So Hat
+                        </span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="lectura">Descripción del Proyecto 3</p>
+                    </div>
+                    <hr class="decorative-line">
+                </li>
+            </ul>
+        </div>
+        <div class="works-image col-md-8 d-flex flex-column align-items-start">
+            <h3 id="project-title" class="mt-2"></h3>
+            <p id="project-description" class="mb-3"></p>
+            <div id="project-gallery" class="gallery"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para la visualización de imágenes -->
+<div id="image-modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" class="modal-content" src="" alt="">
+</div>
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-left">
+            <span class="material-symbols-outlined">pin_drop</span>
+            <span class="text-footer">basen on buenos aires, argentina</span>
+        </div>
+        <div class="footer-center">
+            <div class="social-links">
+                <a href="#" class="social-link text-footer">Instagram</a>
+                <a href="#" class="social-link text-footer">LinkedIn</a>
+                <a href="mailto:jcdominguezbarco@gmail.com" class="social-link text-footer">Email</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <span class="copyright">cruz studios</span>
+            <span class="year">© 2018-2025</span>
+            <span id="clock" class="clock"></span>
+        </div>
+    </footer>
+
+  <!-- JavaScript -->
+    <script src="/java/brandscript.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>

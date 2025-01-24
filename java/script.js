@@ -88,3 +88,5 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
         setInterval(updateClock, 1000);
         updateClock(); // Update clock immediately on load
   
+
+
