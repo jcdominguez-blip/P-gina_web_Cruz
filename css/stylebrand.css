@@ -23,6 +23,13 @@ body {
     position: absolute; /* Permite moverlo a la esquina */
     left: 40px; /* Espaciado desde la izquierda */
     top: 20px; /* Espaciado desde la parte superior */  
+    text-decoration: none;        
+    transition: color 0.3s;
+}
+
+.logo a :hover {
+
+    color: #FFFDF3; /* Mantener el color al hacer hover */
 }
 
 .navbar-brand {
