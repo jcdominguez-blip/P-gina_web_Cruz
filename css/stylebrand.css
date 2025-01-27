@@ -221,14 +221,14 @@ ul {
 }
 
 .modal-content {
-    max-width: 50%; /* Asegúrate de que no exceda el ancho de la ventana */
+    max-width: 70%; /* Asegúrate de que no exceda el ancho de la ventana */
     max-height: 90%; /* Limitar la altura del contenido */
     overflow: auto; /* Permitir desplazamiento si es necesario */
 }
 
 .modal-content img {
     max-width: 100%; /* La imagen no excederá el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    height:fit-content; /* Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio en la parte inferior */
 }
 
