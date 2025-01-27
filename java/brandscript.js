@@ -1,4 +1,9 @@
-//funcion para navresponsive//
+// Función para mostrar/ocultar el menú hamburguesa
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active'); // Alternar la clase activa
+});
+
 
 
 
@@ -11,7 +16,7 @@ function showProjectDetails(element) {
     const images = JSON.parse(element.querySelector('span').getAttribute('data-images'));
 
     document.getElementById('project-title').innerText = title;
-    document.getElementById('project-description').innerText = description;
+    document.getElementById('project-description').innerText = description; // Este es el párrafo donde se mostrará la descripción
 
     const gallery = document.getElementById('project-gallery');
     gallery.innerHTML = ''; // Limpiar la galería anterior

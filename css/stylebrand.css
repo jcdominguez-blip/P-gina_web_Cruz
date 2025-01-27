@@ -98,6 +98,14 @@ body {
     color: #1D1E1C; /* Sin margen para que se alinee con la lista */
 }
 
+.data-title{
+
+    font-size: 0.9em;
+    color: #555;
+    
+
+}
+
 .works-section-brand {
     
     display: flex;
@@ -119,6 +127,7 @@ ul {
     cursor: pointer;
     padding: 10px; /* Espacio alrededor del texto */
     transition: background-color 0.3s; /* Efecto de transición */
+    
 }
 
 .accordion:hover {
@@ -307,13 +316,55 @@ ul {
 
 /* Media queries */
 @media (max-width: 768px) {
+
+
+
+   
+   /* Ocultar logo en responsive */
+   .logo {
+    display: none; /* Oculta el logo en dispositivos pequeños */
+}
+
+
+
     .navbar-brand {
-        flex-direction: column; /* Cambiar a vertical */
+        flex-direction: row; /* Alinear elementos en fila */
+        justify-content: space-between; /* Espacio entre logo y menú */
+        
+    }
+
+    .containerNav {
+        justify-content: space-between; /* Espacio entre el logo y el menú */
+        
     }
 
     .nav-links-brands {
-        flex-direction: column; /* Enlaces en columna */
-        margin-top: 10px; 
+        display: none; /* Ocultar enlaces por defecto */
+        flex-direction: column; /* Colocar enlaces en columna */
+        position: absolute; /* Posicionar en relación a su contenedor */
+        top: 10px; /* Espacio desde el navbar */
+        left: 0;
+        right: 0;
+        background-color: #1D1E1C; /* Fondo oscuro */
+        z-index: 1000; /* Asegurar que esté por encima */
+    }
+
+    .nav-links-brands.active {
+        display: flex; /* Mostrar enlaces cuando el menú hamburguesa esté activo */
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el menú hamburguesa */
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        display: block; /* Asegurarse de que las barras se muestren */
+        width: 25px; /* Ancho de las barras */
+        height: 3px; /* Altura de las barras */
+        background-color: #FFFDF3; /* Color de las barras */
+        margin: 5px auto; /* Espaciado entre las barras */
+        transition: all 0.3s; /* Transición suave */
     }
 
     .works-section-brand {
@@ -334,8 +385,4 @@ ul {
     .subtitulo {
         text-align: center; /* Centrar el subtítulo */
     }
-
-    
-}
-
-
+}   
