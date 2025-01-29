@@ -25,11 +25,15 @@ body {
     top: 20px; /* Espaciado desde la parte superior */  
     text-decoration: none;        
     transition: color 0.3s;
+    
 }
 
-.logo a :hover {
 
-    color: #FFFDF3; /* Mantener el color al hacer hover */
+.logo a :hover {
+    
+    color: #FFFDF3; /* Color cuando está activo o en foco */
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+    
 }
 
 .navbar-brand {
@@ -83,7 +87,8 @@ body {
 }
 
 .titulo-proyecto{
-
+    
+    font-weight: 500;    
     font-family: "cofo-sans-mono-variable";
     
 }
@@ -116,15 +121,18 @@ body {
     margin-left: 1%;
     padding-right: 20px; /* Espacio entre lista y imagen */
     flex-grow: 1; /* Permitir que la lista crezca */
+    
 }
 
 ul {
     list-style: none; /* Eliminar viñetas */
     padding: 0; /* Eliminar padding */
+    
 }
 
 .accordion {
-    cursor: pointer;
+    
+    cursor: pointer;    
     padding: 10px; /* Espacio alrededor del texto */
     transition: background-color 0.3s; /* Efecto de transición */
     
@@ -138,10 +146,18 @@ ul {
     display: none; /* Ocultar contenido por defecto */
 }
 
+
 .lectura {
     font-size: 0.9em;
     color: #555;
     margin: 10px 0; /* Espacio superior e inferior */
+}
+
+.cintillo{
+    color: #838383;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 4px;
 }
 
 .decorative-line {
