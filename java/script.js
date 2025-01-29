@@ -90,3 +90,29 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
   
 
 
+//boton lenguaje//
+
+const button = document.getElementById('language-toggle');
+let isSpanish = true;
+
+button.addEventListener('click', () => {
+    isSpanish = !isSpanish; // Cambia el idioma
+    button.textContent = isSpanish ? 'Español' : 'English';
+
+    // Cambiar contenido según el idioma
+    if (isSpanish) {
+        // Cambia el contenido a español
+        document.querySelector('.hero-title').textContent = 'Estudio Cruz';
+        document.querySelector('.hero-subtitle').textContent = 'Diseño gráfico y FrontEnd';
+        // Agrega más cambios de contenido aquí...
+    } else {
+        // Cambia el contenido a inglés
+        document.querySelector('.hero-title').textContent = 'Studio Cruz';
+        document.querySelector('.hero-subtitle').textContent = 'Graphic Designer & Front End Developer';
+        // Agrega más cambios de contenido aquí...
+    }
+
+    
+});
+
+

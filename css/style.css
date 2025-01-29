@@ -143,6 +143,28 @@ body {
     text-decoration: none;
 }}
 
+/*----boton lenguaje style----*/
+
+.language-switch {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.language-switch button {
+    padding: 10px 15px;
+    background-color: #1D1E1C; /* Color de fondo del botón */
+    color: #FFFDF3; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-switch button:hover {
+    background-color: #444; /* Color al pasar el ratón */
+}
 
 /*----- Sección About Me -----*/
 
