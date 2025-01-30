@@ -99,6 +99,9 @@ body {
 /*-----Fin animación*/
 
 .hero {
+    background-image: url('https://i.ibb.co/WNSDz2rH/background.png'); /* Cambia la ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center; /* Centra la imagen */
     display: flex;
     align-items: center;
     justify-content: center;

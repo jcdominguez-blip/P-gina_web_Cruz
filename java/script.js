@@ -92,27 +92,32 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
 
 //boton lenguaje//
 
-const button = document.getElementById('language-toggle');
-let isSpanish = true;
+document.addEventListener('DOMContentLoaded', function() {
+    const languageToggle = document.getElementById('language-toggle');
+    const elementsToTranslate = document.querySelectorAll('[data-en], [data-es]');
 
-button.addEventListener('click', () => {
-    isSpanish = !isSpanish; // Cambia el idioma
-    button.textContent = isSpanish ? 'Español' : 'English';
+    // Función para cambiar el idioma
+    function toggleLanguage() {
+        const currentLanguage = languageToggle.textContent.trim().toLowerCase();
+        const newLanguage = currentLanguage === 'español' ? 'english' : 'español';
 
-    // Cambiar contenido según el idioma
-    if (isSpanish) {
-        // Cambia el contenido a español
-        document.querySelector('.hero-title').textContent = 'Estudio Cruz';
-        document.querySelector('.hero-subtitle').textContent = 'Diseño gráfico y FrontEnd';
-        // Agrega más cambios de contenido aquí...
-    } else {
-        // Cambia el contenido a inglés
-        document.querySelector('.hero-title').textContent = 'Studio Cruz';
-        document.querySelector('.hero-subtitle').textContent = 'Graphic Designer & Front End Developer';
-        // Agrega más cambios de contenido aquí...
+        // Cambiar el texto del botón
+        languageToggle.textContent = newLanguage.charAt(0).toUpperCase() + newLanguage.slice(1);
+
+        // Cambiar el contenido de los elementos
+        elementsToTranslate.forEach(element => {
+            if (currentLanguage === 'español') {
+                element.textContent = element.getAttribute('data-en');
+            } else {
+                element.textContent = element.getAttribute('data-es');
+            }
+        });
     }
 
-    
+    // Evento para cambiar el idioma al hacer clic en el botón
+    languageToggle.addEventListener('click', toggleLanguage);
 });
+
+
 
 

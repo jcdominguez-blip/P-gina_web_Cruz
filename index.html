@@ -26,17 +26,17 @@
             </div>
             <!--<div class="logo">Logo</div>-->
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about-me" data-en="About Me" data-es="Sobre Mí">Sobre mí</a></li>
+                <li><a href="#work" data-en="Work" data-es="Trabajo">Trabajo</a></li>
+                <li><a href="#contact" data-en="Contact" data-es="Contacto">Contacto</a></li>
             </ul>            
         </div>
     </nav>
     <header class="hero">
         <div class="container">
-            <h1 class="hero-title">Studio Cruz</h1>
-            <p class="hero-subtitle">Graphic Designer & Front End Developer</p>
-            <a href="#portfolio" class="hero-button">View My Work</a>
+            <h1 class="hero-title" data-en="Studio Cruz" data-es="Estudio Cruz">Estudio Cruz</h1>
+            <p class="hero-subtitle" data-en="Graphic Designer, UX | UI & Front End Developer" data-es="Graphic Designer, UX | UI & Front End Developer">Graphic Designer, UX | UI & Front End Developer</p>
+            <a href="#portfolio" class="hero-button" data-en="View My Work" data-es="Ver mi Trabajo">Ver mi trabajo</a>
         </div>
     </header>    
 
@@ -50,11 +50,11 @@
     <!--Aboutme-->
     <section class="about-me">
         <div class="about-content">
-            <h2 class="subtitulo">About Me</h2>
+            <h2 class="subtitulo" data-en="About Me" data-es="Sobre Mí">About Me</h2>
             <hr class="decorative-line">
-            <p1 class="lectura">From a young age, I developed a strong affinity for design and art, which led me to study Graphic Design at the “Universidad de Buenos Aires” (FADU), specializing in corporate identities. As a freelance designer since 2018, I have worked on various projects, including identity brand for "Municipalidad de San Cristobal” and sub-brands for renowned companies like “Unión Ferroviaria” and “Trenes Argentinos”, where I focused on branding, communication, and application design.</p>
-            <p1 class="lectura">My education and passion for design have allowed me to acquire skills in UX/UI, Community Management, and Front End Development. This portfolio reflects my commitment to creativity and the pursuit of effective solutions, inviting you to explore my projects and professional growth.</p>
-            <p class="subtitulosIconos">Skills<img class="iconSkills" src="./img/arrow.svg" alt="AI Icon"></p>
+            <p class="lectura" data-en="From a young age, I developed a strong affinity for design and art, which led me to study Graphic Design at the “Universidad de Buenos Aires” (FADU), specializing in corporate identities. As a freelance designer since 2018, I have worked on various projects, including identity brand for 'Municipalidad de San Cristobal’ and sub-brands for renowned companies like “Unión Ferroviaria” and “Trenes Argentinos”, where I focused on branding, communication, and application design." data-es="Desde una edad temprana, desarrollé una fuerte afinidad por el diseño y el arte, lo que me llevó a estudiar Diseño Gráfico en la “Universidad de Buenos Aires” (FADU), especializándome en identidades corporativas. Como diseñador freelance desde 2018, he trabajado en varios proyectos, incluyendo la identidad de marca para la 'Municipalidad de San Cristóbal’ y sub-marcas para empresas reconocidas como “Unión Ferroviaria” y “Trenes Argentinos”, donde me enfoqué en branding, comunicación y diseño de aplicaciones.">From a young age, I developed a strong affinity for design and art, which led me to study Graphic Design at the “Universidad de Buenos Aires” (FADU), specializing in corporate identities. As a freelance designer since 2018, I have worked on various projects, including identity brand for "Municipalidad de San Cristobal” and sub-brands for renowned companies like “Unión Ferroviaria” and “Trenes Argentinos”, where I focused on branding, communication, and application design.</p>
+            <p class="lectura" data-en="My education and passion for design have allowed me to acquire skills in UX/UI, Community Management, and Front End Development. This portfolio reflects my commitment to creativity and the pursuit of effective solutions, inviting you to explore my projects and professional growth." data-es="Mi educación y pasión por el diseño me han permitido adquirir habilidades en UX/UI, Community Management y Desarrollo Front End. Este portafolio refleja mi compromiso con la creatividad y la búsqueda de soluciones efectivas, invitándote a explorar mis proyectos y crecimiento profesional.">My education and passion for design have allowed me to acquire skills in UX/UI, Community Management, and Front End Development. This portfolio reflects my commitment to creativity and the pursuit of effective solutions, inviting you to explore my projects and professional growth.</p>
+            <p class="subtitulosIconos" data-en="Skills" data-es="Habilidades">Skills<img class="iconSkills" src="./img/arrow.svg" alt="AI Icon"></p>
             <div class="icons">
                 <img class="icon2" src="./img/ai.svg" alt="AI Icon">
                 <img class="icon2" src="./img/ps.svg" alt="AI Icon">
@@ -79,7 +79,7 @@
 
     <!-- WORKS SECTION --> 
 <section class="work">
-    <h2 class="subtitulo">Work</h2>
+    <h2 class="subtitulo" data-en="Work" data-es="Trabajo">Work</h2>
     <div class="works-section">
         <div class="works-image">
             <img id="project-image" src="https://i.ibb.co/1YWL3MTz/example1.jpg" alt="Proyecto 1" />  
@@ -90,39 +90,36 @@
                     <div class="accordion" onclick="toggleAccordion(this)">
                         <span data-title="Título del Proyecto 1" data-description="Descripción del Proyecto 1" data-images='["https://i.ibb.co/8BbCKvj/1.jpg", "https://i.ibb.co/qMQcwjt/SC.jpg", "https://i.ibb.co/rw5zDHP/1-tac.jpg"]'
                         '>
-                            [01] Brand design                                                          
+                            [01] <span data-en="Brand design" data-es="Diseño de marca">Brand design</span>                                                          
                         </span>
                     </div>
                     <div class="accordion-content">
-                        <p class="lectura">Proyectos de identidad de marca con alto rendimiento y calidad gráfica. A través de un enfoque estratégico y creativo, desarrollamos identidades visuales que destacan en el mercado y comunican eficazmente sus valores y misión. Desde creación de marcas gráficas, hasta rediseños, garantizamos soluciones integrales que impulsan el reconocimiento y el reposicionamiento de la marca. </p>
-                        <button id="project-button" onclick="location.href='./pages/brandworks.html'">Ver más</button>
+                        <p class="lectura" data-en="High-performance brand identity projects with graphic quality. Through a strategic and creative approach, we develop visual identities that stand out in the market and effectively communicate your values ​​and mission. From graphic brand creation to redesigns, we guarantee comprehensive solutions that boost brand recognition and repositioning." data-es="Proyectos de identidad de marca con alto rendimiento y calidad gráfica. A través de un enfoque estratégico y creativo, desarrollamos identidades visuales que destacan en el mercado y comunican eficazmente sus valores y misión. Desde creación de marcas gráficas, hasta rediseños, garantizamos soluciones integrales que impulsan el reconocimiento y el reposicionamiento de la marca.">Proyectos de identidad de marca con alto rendimiento y calidad gráfica. A través de un enfoque estratégico y creativo, desarrollamos identidades visuales que destacan en el mercado y comunican eficazmente sus valores y misión. Desde creación de marcas gráficas, hasta rediseños, garantizamos soluciones integrales que impulsan el reconocimiento y el reposicionamiento de la marca.</p>
+                        <button id="project-button" onclick="location.href='./pages/brandworks.html'" data-en="View More" data-es="Ver Más">Ver más</button>
                     </div>
                     <hr class="decorative-line">
                 </li>
                 <li>
                     <div class="accordion" onclick="toggleAccordion(this)">
                         <span data-title="Título del Proyecto 2" data-description="Descripción del Proyecto 2" data-images='["https://i.ibb.co/wrZZPSjZ/example-PD1.jpg", "https://i.ibb.co/ZRSpRPhM/example-PD2.jpg", "https://i.ibb.co/QvNLdDsK/example-ux.jpg"]'>
-                            [02] UX/UI design, Product design                                 
+                            [02] <span data-en="UX/UI design, Product design" data-es="Diseño UX/UI, Diseño de producto">UX/UI design, Product design</span>                                 
                         </span>
                     </div>
                     <div class="accordion-content">
-                        <p class="lectura">En el diseño UX/UI y de productos, me enfoco en crear experiencias intuitivas y atractivas para los usuarios. Cada proyecto comienza con una profunda investigación del usuario para entender sus necesidades y comportamientos.
-                             A partir de ahí, desarrollo wireframes y prototipos que facilitan la interacción y mejoran la usabilidad.</p>
-                        <button id="project-button">Ver más</button>
+                        <p class="lectura" data-en="In UX/UI and product design, I focus on creating intuitive and engaging experiences for users. Every project starts with in-depth user research to understand their needs and behaviors. From there, I develop wireframes and prototypes that facilitate interaction and improve usability." data-es="En el diseño UX/UI y de productos, me enfoco en crear experiencias intuitivas y atractivas para los usuarios. Cada proyecto comienza con una profunda investigación del usuario para entender sus necesidades y comportamientos. A partir de ahí, desarrollo wireframes y prototipos que facilitan la interacción y mejoran la usabilidad.">En el diseño UX/UI y de productos, me enfoco en crear experiencias intuitivas y atractivas para los usuarios. Cada proyecto comienza con una profunda investigación del usuario para entender sus necesidades y comportamientos. A partir de ahí, desarrollo wireframes y prototipos que facilitan la interacción y mejoran la usabilidad.</p>
+                        <button id="project-button" data-en="View More" data-es="Ver Más">Ver más</button>
                     </div>
                     <hr class="decorative-line">
                 </li>
                 <li>
                     <div class="accordion" onclick="toggleAccordion(this)">
                         <span data-title="Título del Proyecto 3" data-description="Descripción del Proyecto 3" data-images='["https://i.ibb.co/zTsYQtDr/FE3.jpg", "https://i.ibb.co/3Y5thW3K/FE1.jpg", "https://i.ibb.co/YFFWSmgg/FE2.jpg"]'>
-                            [03] Front end Developer
+                            [03] <span data-en="Front end Developer" data-es="Desarrollador Front End">Front end Developer</span>
                         </span>
                     </div>
                     <div class="accordion-content">
-                        <!--<h2 id="project-title">Título del Proyecto 3</h2>-->
-                        <p class="lectura">interfaces web atractivas y funcionales que brindan una experiencia de usuario excepcional. Mi enfoque comienza con una comprensión profunda del diseño y la usabilidad, colaborando estrechamente con diseñadores UX/UI para transformar prototipos en productos interactivos.
-                            Utilizo tecnologías como HTML, CSS y JavaScript para desarrollar soluciones eficientes y responsivas, asegurando que cada sitio web no solo se vea bien, sino que también funcione de manera óptima en diferentes dispositivos y navegadores.</p>
-                        <button id="project-button">Ver más</button>
+                        <p class="lectura" data-en="Engaging and functional web interfaces that deliver an exceptional user experience. My approach begins with a deep understanding of design and usability, collaborating closely with UX/UI designers to transform prototypes into interactive products. I use technologies such as HTML, CSS, and JavaScript to develop efficient and responsive solutions, ensuring that each website not only looks good, but also performs optimally across different devices and browsers." data-es="interfaces web atractivas y funcionales que brindan una experiencia de usuario excepcional. Mi enfoque comienza con una comprensión profunda del diseño y la usabilidad, colaborando estrechamente con diseñadores UX/UI para transformar prototipos en productos interactivos. Utilizo tecnologías como HTML, CSS y JavaScript para desarrollar soluciones eficientes y responsivas, asegurando que cada sitio web no solo se vea bien, sino que también funcione de manera óptima en diferentes dispositivos y navegadores.">interfaces web atractivas y funcionales que brindan una experiencia de usuario excepcional. Mi enfoque comienza con una comprensión profunda del diseño y la usabilidad, colaborando estrechamente con diseñadores UX/UI para transformar prototipos en productos interactivos. Utilizo tecnologías como HTML, CSS y JavaScript para desarrollar soluciones eficientes y responsivas, asegurando que cada sitio web no solo se vea bien, sino que también funcione de manera óptima en diferentes dispositivos y navegadores.</p>
+                        <button id="project-button" data-en="View More" data-es="Ver Más">Ver más</button>
                     </div>
                     <hr class="decorative-line">
                 </li>
@@ -135,7 +132,7 @@
 <footer class="footer">
     <div class="footer-left">
         <span class="material-symbols-outlined">pin_drop</span>
-        <span class="text-footer">basen on buenos aires, argentina</span>
+        <span class="text-footer" data-en="based in buenos aires, argentina" data-es="basado en buenos aires, argentina">based in buenos aires, argentina</span>
     </div>
     <div class="footer-center">
         <div class="social-links">
@@ -146,7 +143,7 @@
     </div>
     <div class="footer-right">
         <span class="copyright">cruz studios</span>
-        <span class="year">© 2018-2025</span>
+        <span class="year">©️ 2018-2025</span>
         <span id="clock" class="clock"></span>
     </div>
 </footer>
