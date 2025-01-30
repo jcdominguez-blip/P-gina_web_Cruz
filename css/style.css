@@ -39,12 +39,13 @@ body {
 .nav-links {    
     list-style: none;
     display: flex;
+   
     justify-content: center; /* Centrar los enlaces */
     flex-grow: 1; /* Permite que los enlaces ocupen el espacio disponible */
 }
 
 .nav-links li {
-    margin: 0 100px; /* Espaciado horizontal entre los enlaces */
+    margin: 0 95px; /* Espaciado horizontal entre los enlaces */
 }
 
 .nav-links a {
@@ -53,6 +54,7 @@ body {
     color: #FFFDF3;
     font-size: 16px;
     transition: color 0.3s;
+    white-space: nowrap; /* Evita el salto de línea */
 }
 
 .nav-links a:hover {
@@ -83,7 +85,7 @@ body {
 }
 
 .nav-links li::before {
-    content: '[01]'; /* Número que aparecerá al hacer hover */
+    
     position: absolute; /* Posicionarlo de forma absoluta */
     left: 50%; /* Centrar horizontalmente */
     transform: translateX(-50%); /* Ajustar para centrar */
@@ -99,7 +101,7 @@ body {
 /*-----Fin animación*/
 
 .hero {
-    background-image: url('https://i.ibb.co/WNSDz2rH/background.png'); /* Cambia la ruta de la imagen */
+    background-image: url('https://i.ibb.co/BHyJB7dy/background.png'); /* Cambia la ruta de la imagen */
     background-size: cover; /* Asegura que la imagen cubra toda el área */
     background-position: center; /* Centra la imagen */
     display: flex;
