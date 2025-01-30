@@ -160,8 +160,8 @@ body {
 .language-switch button {
     padding: 10px 15px;
     background-color: #1D1E1C; /* Color de fondo del botón */
+    border-color: #FFFDF3;
     color: #FFFDF3; /* Color del texto */
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
