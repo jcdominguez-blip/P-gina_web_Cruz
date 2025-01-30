@@ -64,4 +64,77 @@ window.onclick = function(event) {
         setInterval(updateClock, 1000);
         updateClock(); // Update clock immediately on load
 
+    //boton lenguaje//
+
+document.addEventListener('DOMContentLoaded', function() {
+    const languageToggle = document.getElementById('language-toggle');
+    const elementsToTranslate = document.querySelectorAll('[data-en], [data-es]');
+
+    // Función para cambiar el idioma
+    function toggleLanguage() {
+        const currentLanguage = languageToggle.textContent.trim().toLowerCase();
+        const newLanguage = currentLanguage === 'español' ? 'english' : 'español';
+
+        // Cambiar el texto del botón
+        languageToggle.textContent = newLanguage.charAt(0).toUpperCase() + newLanguage.slice(1);
+
+        // Cambiar el contenido de los elementos
+        elementsToTranslate.forEach(element => {
+            if (currentLanguage === 'español') {
+                element.textContent = element.getAttribute('data-es');
+            } else {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+    }
+
+    // Evento para cambiar el idioma al hacer clic en el botón
+    languageToggle.addEventListener('click', toggleLanguage);
+
     
+});
+
+//nuevo description//
+
+document.addEventListener('DOMContentLoaded', function() {
+    const languageToggle = document.getElementById('language-toggle');
+    const elementsToTranslate = document.querySelectorAll('[data-title-en], [data-title-es], [data-description-en], [data-description-es]');
+    
+    // Establecer el idioma inicial (por ejemplo, español)
+    let isSpanish = true; // Cambia esto a false si quieres que sea inglés por defecto
+
+    // Función para cambiar el idioma
+    function toggleLanguage() {
+        isSpanish = !isSpanish; // Cambiar el estado del idioma
+
+        // Cambiar el texto del botón
+        languageToggle.textContent = isSpanish ? 'Inglés' : 'Español';
+
+        // Cambiar el contenido de los elementos
+        elementsToTranslate.forEach(element => {
+            if (isSpanish) {
+                if (element.hasAttribute('data-title-es')) {
+                    element.textContent = element.getAttribute('data-title-es');
+                }
+                if (element.hasAttribute('data-description-es')) {
+                    element.textContent = element.getAttribute('data-description-es');
+                }
+            } else {
+                if (element.hasAttribute('data-title-en')) {
+                    element.textContent = element.getAttribute('data-title-en');
+                }
+                if (element.hasAttribute('data-description-en')) {
+                    element.textContent = element.getAttribute('data-description-en');
+                }
+            }
+        });
+    }
+
+    // Inicializar el texto del botón
+    languageToggle.textContent = isSpanish ? 'Español' : 'Inglés';
+
+    // Evento para cambiar el idioma al hacer clic en el botón
+    languageToggle.addEventListener('click', toggleLanguage);
+});
+
+

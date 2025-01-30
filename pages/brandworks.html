@@ -17,11 +17,18 @@
 </head>
 <body>
 
+
+     <!--Boton lenguaje-->
+
+     <div class="language-switch">
+        <button id="language-toggle">Español</button>
+    </div>
+
 <!--Navbar-->
 
     <nav class="navbar-brand">
         <div class="containerNav">
-            <a href="../index.html" class="logo">Studio Cruz</a>
+            <a href="../index.html" class="logo" data-es="Estudio Cruz ®" data-en="Studio Cruz ®">Studio Cruz ®</a>
             <!-- responsive hamburguer menu CSS -->
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -30,9 +37,9 @@
             </div>
             <!--<div class="logo">Logo</div>-->
             <ul class="nav-links-brands" id="nav-links">
-                <li><a href="../index.html">[00] Home</a></li>
-                <li><a href="#work">[02] UX/UI design, Product design</a></li>
-                <li><a href="#contact">[03] Front end Developer</a></li>
+                <li><a href="../index.html" data-en="[00] Home" data-es="[00] Inicio">[00] Home</a></li>
+                <li><a href="#work" data-en="[02] UX/UI design, Product design" data-es="[02] Diseño UX/UI y producto">[02] UX/UI design, Product design</a></li>
+                <li><a href="#contact" data-en="[03] Front end Developer" data-es="[03] Desarrollo Front end">[03] Front end Developer</a></li>
             </ul>
         </div>
     </nav>
@@ -41,14 +48,14 @@
 
 <!--Galería-->
 <section class="work-brand">
-    <h2 class="subtitulo">[01] Brand design</h2>
+    <h2 class="subtitulo" data-en="[01] Brand design" data-es="[01] Diseño de marca" >[01] Diseño de marca</h2>
     <div class="works-section-brand d-flex">
         <div class="works-list-brand col-md-4">
             <ul>                
 
                 <li>
                     <div class="accordion" onclick="showProjectDetails(this)">
-                        <span class="titulo-proyecto" data-title="SUUAM (sistema único y universal de auxilio mecánico)" data-description="SUUAM es una innovadora super app diseñada para transformar el ecosistema automotriz en Argentina, permitiendo a los usuarios administrar sus vehículos, solicitar auxilio mecánico y adquirir repuestos. Con el objetivo de posicionarse como líder en el sector, SUUAM busca diferenciarse mediante una oferta integral de servicios que conecte a prestadores y usuarios, creando una experiencia confiable y profesional. A medida que la empresa evoluciona, se proyecta expandirse a Latinoamérica, desarrollando una identidad visual que refleje su crecimiento y adaptabilidad. Con un enfoque en tecnología avanzada y comunicación efectiva, SUUAM se posiciona como una solución integral para todos los aspectos del cuidado y asistencia vehicular." data-images='["https://i.ibb.co/8BbCKvj/1.jpg", "https://i.ibb.co/3TnhxV6/2.jpg", "https://i.ibb.co/XbVQSXX/3.jpg", "https://i.ibb.co/MDn31W8/6.jpg", "https://i.ibb.co/wSRTD1D/5.jpg", "https://i.ibb.co/rdfDHp4/7.jpg", "https://i.ibb.co/k2V6qRc/simbolo.jpg", "https://i.ibb.co/NYhNbjn/8.jpg"]'>                        
+                        <span class="titulo-proyecto" data-title="SUUAM (sistema único y universal de auxilio mecánico)"  data-description= "SUUAM es una innovadora super app diseñada para transformar el ecosistema automotriz en Argentina, permitiendo a los usuarios administrar sus vehículos, solicitar auxilio mecánico y adquirir repuestos. Con el objetivo de posicionarse como líder en el sector, SUUAM busca diferenciarse mediante una oferta integral de servicios que conecte a prestadores y usuarios, creando una experiencia confiable y profesional. A medida que la empresa evoluciona, se proyecta expandirse a Latinoamérica, desarrollando una identidad visual que refleje su crecimiento y adaptabilidad. Con un enfoque en tecnología avanzada y comunicación efectiva, SUUAM se posiciona como una solución integral para todos los aspectos del cuidado y asistencia vehicular." data-images='["https://i.ibb.co/8BbCKvj/1.jpg", "https://i.ibb.co/3TnhxV6/2.jpg", "https://i.ibb.co/XbVQSXX/3.jpg", "https://i.ibb.co/MDn31W8/6.jpg", "https://i.ibb.co/wSRTD1D/5.jpg", "https://i.ibb.co/rdfDHp4/7.jpg", "https://i.ibb.co/k2V6qRc/simbolo.jpg", "https://i.ibb.co/NYhNbjn/8.jpg"]'>                        
                             <p class="cintillo">[2024]</p> SUUAM (sistema único y universal de auxilio mecánico)                                                         
                         </span>
                     </div>
@@ -96,8 +103,8 @@
                
                 <li>
                     <div class="accordion" onclick="showProjectDetails(this)">
-                        <span class="titulo-proyecto" data-title="Trenes Argentinos Cargas " data-description=" Con una impresionante red de 9,100 kilómetros de vía que abarca 15 provincias y la Ciudad Autónoma de Buenos Aires, Trenes Argentinos Cargas (TAC) se posiciona como la principal operadora ferroviaria de Argentina. El rediseño se basó en la gestión de ese momento, con el objetivo de alinear el sistema visual con el del estado. En lugar de cambiar la marca, se optó por ajustar la comunicación existente, aprovechando el capital de marcario que la empresa ya había construido." data-images='["https://i.ibb.co/dmkbM0K/tac.jpg", "https://i.ibb.co/rw5zDHP/1-tac.jpgs", "https://i.ibb.co/B3Y8zCZ/3-tac.jpg", "https://i.ibb.co/ygMRfn4/4-tac.jpg", "https://i.ibb.co/Bj2RsVk/5-tac.jpg", "https://i.ibb.co/7Jr3ypL/6-tac.jpg", "https://i.ibb.co/4gjV8QZ/2-tac.jpg", "https://i.ibb.co/RvWXn0M/7-tac.jpg"]'>
-                            <p class="cintillo">[2020-2023]</p>Trenes Argentinos Cargas                                 
+                        <span class="titulo-proyecto" data-title=" Unión Ferroviaria " data-description=" Con una impresionante red de 9,100 kilómetros de vía que abarca 15 provincias y la Ciudad Autónoma de Buenos Aires, Trenes Argentinos Cargas (TAC) se posiciona como la principal operadora ferroviaria de Argentina. El rediseño se basó en la gestión de ese momento, con el objetivo de alinear el sistema visual con el del estado. En lugar de cambiar la marca, se optó por ajustar la comunicación existente, aprovechando el capital de marcario que la empresa ya había construido." data-images='["https://i.ibb.co/dmkbM0K/tac.jpg", "https://i.ibb.co/rw5zDHP/1-tac.jpgs", "https://i.ibb.co/B3Y8zCZ/3-tac.jpg", "https://i.ibb.co/ygMRfn4/4-tac.jpg", "https://i.ibb.co/Bj2RsVk/5-tac.jpg", "https://i.ibb.co/7Jr3ypL/6-tac.jpg", "https://i.ibb.co/4gjV8QZ/2-tac.jpg", "https://i.ibb.co/RvWXn0M/7-tac.jpg"]'>
+                            <p class="cintillo">[2023]</p> Unión Ferroviaria                                  
                         </span>
                     </div>
                     <div class="accordion-content">

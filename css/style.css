@@ -538,4 +538,15 @@ hr.decorative-line {
     .footer-right {
         align-items: center; /* Centrar contenido en móviles */
     }
+
+    .language-switch {
+        top: 10px; /* Ajusta la posición en pantallas pequeñas */
+        right: 10px; /* Ajusta la posición en pantallas pequeñas */
+    }
+
+    #language-toggle {
+        padding: 8px 16px; /* Reduce el espaciado interno en pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
 }
+
