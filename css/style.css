@@ -542,79 +542,138 @@ hr.decorative-line {
 
 
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) { /* Abarca más dispositivos móviles */
-    
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        font-size: 14px; /* Tamaño de fuente base más pequeño */
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 10px; /* Reducir el padding */
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+    }
+
+    .containerNav {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el botón de menú hamburguesa */
+    }
+
+    .nav-links {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column; /* Alinear enlaces verticalmente */
+        width: 100%; /* Ocupar todo el ancho */
+        background-color: #1D1E1C; /* Fondo oscuro para el menú */
+        padding: 10px 0; /* Espaciado interno */
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostrar el menú cuando está activo */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Espaciado vertical entre enlaces */
+    }
+
+    .nav-links a {
+        color: #FFFDF3; /* Color del texto */
+        font-size: 16px; /* Tamaño de fuente */
+        padding: 10px; /* Espaciado interno */
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto; /* Altura automática */
+        padding: 60px 20px; /* Espaciado interno */
+    }
+
+    .hero-title {
+        font-size: 60px; /* Tamaño de fuente más pequeño */
+    }
+
+    .hero-subtitle {
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+    }
+
+    .hero-button {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px 16px; /* Espaciado interno más pequeño */
+    }
+
+    /* About Me Section */
+    .about-me {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        padding: 20px; /* Reducir el padding */
+    }
+
+    .about-content {
+        padding-right: 0; /* Eliminar el padding derecho */
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    .about-image img {
+        max-width: 80%; /* Reducir el tamaño de la imagen */
+    }
+
+    /* Works Section */
     .works-section {
-        flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
-        align-items: center; /* Centrar contenido */
+        flex-direction: column; /* Cambiar a disposición vertical */
     }
 
     .works-image {
         order: 1; /* Asegurar que la imagen esté primero */
-        width: 100%; /* Hacer que la imagen ocupe todo el ancho */
-        text-align: center; /* Centrar la imagen */
+        width: 100%; /* Ocupar todo el ancho */
+        padding: 10px; /* Reducir el padding */
     }
 
     .works-list {
         order: 2; /* Asegurar que la lista esté debajo de la imagen */
-        width: 100%; /* Hacer que la lista ocupe todo el ancho */
-    }
-
-    .works-image img {
-        max-width: 100%; /* Asegurar que la imagen no se desborde */
-        height: auto; /* Mantener la proporción de la imagen */
-    }
-
-    .nav-links {
-        display: none; /* Ocultar menú en móviles */
-        flex-direction: column; /* Alinear enlaces verticalmente */
-        position: absolute; /* Posicionar el menú */
-        background-color: #f7f7f7; /* Fondo del menú */
-        top: 60px; /* Ubicar debajo de la navbar */
-        right: 0;
         width: 100%; /* Ocupar todo el ancho */
-        padding: 10px 0; /* Espaciado en el menú */
+        padding: 10px; /* Reducir el padding */
     }
 
-    .nav-links.active {
-        display: flex; /* Mostrar menú cuando está activo */
+    .works-list .accordion span {
+        font-size: 18px; /* Tamaño de fuente más pequeño */
     }
 
-    .nav-links a {
-        color: #1D1E1C; /* Color del texto cuando el menú está oculto */
-        font-size: 18px; /* Ajusta el tamaño de la fuente si es necesario */
-        padding: 10px; /* Espaciado interno para los enlaces */
-        transition: color 0.3s; /* Suave transición de color */
+    .accordion-content {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
     }
 
-    .nav-links.active a:hover {
-        color: #686868; /* Color al pasar el ratón sobre los enlaces en el menú activo */
+    /* Contact Section */
+    .contact {
+        padding: 40px 20px; /* Reducir el padding */
     }
 
-    .menu-toggle {
-        display: flex; /* Mostrar el botón en móvil */
+    .contact-form {
+        gap: 10px; /* Reducir el espacio entre elementos */
     }
 
-    .hero-title {
-        font-size: 90px; /* Ajustar tamaño para móviles */
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
     }
 
-    .lectura {
-        font-family: "cofo-sans-mono-variable";
-        font-weight: 400; /* Ajustar peso para mejor legibilidad */
-        font-size: 14px; /* Ajustar tamaño para móviles */
-        color: #838383;
+    .hero-button {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px 16px; /* Espaciado interno más pequeño */
     }
 
+    /* Footer */
     .footer {
-        flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
-        align-items: center; /* Centrar el contenido */
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center; /* Centrar elementos */
         text-align: center; /* Centrar texto */
     }
 
     .footer-left, .footer-center, .footer-right {
-        width: 100%; /* Ancho completo para cada sección */
-        margin-bottom: 10px; /* Espaciado entre secciones */
+        width: 100%; /* Ocupar todo el ancho */
+        margin-bottom: 10px; /* Espaciado inferior */
     }
 
     .social-links {
@@ -623,17 +682,19 @@ hr.decorative-line {
     }
 
     .footer-right {
-        align-items: center; /* Centrar contenido en móviles */
+        align-items: center; /* Centrar elementos */
     }
 
+    /* Language Switch */
     .language-switch {
-        top: 10px; /* Ajusta la posición en pantallas pequeñas */
-        right: 10px; /* Ajusta la posición en pantallas pequeñas */
+        position: fixed;
+        bottom: 10px; /* Ajustar posición */
+        right: 10px; /* Ajustar posición */
     }
 
     #language-toggle {
-        padding: 8px 16px; /* Reduce el espaciado interno en pantallas pequeñas */
-        font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+        padding: 6px 12px; /* Reducir el espaciado interno */
+        font-size: 12px; /* Reducir el tamaño de la fuente */
     }
 }
 
