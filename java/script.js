@@ -114,10 +114,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Evento para cambiar el idioma al hacer clic en el botón
+    // Evento para cambiar el idioma al hacer clic en el botón//
     languageToggle.addEventListener('click', toggleLanguage);
 });
 
+// Traduccion formulario//
 
+function toggleLanguage() {
+    const currentLanguage = languageToggle.textContent.trim().toLowerCase();
+    const newLanguage = currentLanguage === 'español' ? 'english' : 'español';
+
+    // Cambiar el texto del botón
+    languageToggle.textContent = newLanguage.charAt(0).toUpperCase() + newLanguage.slice(1);
+
+    // Cambiar el contenido de los elementos
+    document.querySelectorAll('[data-en], [data-es]').forEach(element => {
+        if (currentLanguage === 'español') {
+            element.textContent = element.getAttribute('data-en');
+        } else {
+            element.textContent = element.getAttribute('data-es');
+        }
+    });
+
+    // Cambiar los placeholders y labels del formulario
+    const formLabels = document.querySelectorAll('.form-group label');
+    formLabels.forEach(label => {
+        if (currentLanguage === 'español') {
+            label.textContent = label.getAttribute('data-en');
+        } else {
+            label.textContent = label.getAttribute('data-es');
+        }
+    });
+}
 
 

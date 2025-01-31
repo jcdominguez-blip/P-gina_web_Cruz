@@ -127,6 +127,35 @@
         </div>
     </div>
 </section>
+
+<!-- Sección de Contacto -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="subtitulo-contacto" data-en="Contact" data-es="Contacto">Contacto</h2>
+        <p class="lectura-contacto" data-en="Would you like to get in touch with us?" data-es="¿Deseas ponerte en contacto con nosotros?">¿Deseas ponerte en contacto con nosotros?</p>
+        
+        <!-- Formulario de Contacto -->
+        <form action="https://formspree.io/f/xrbekqeb" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="nombre" data-en="Name" data-es="Nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email" data-en="Email" data-es="Correo electrónico">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono" data-en="Phone" data-es="Teléfono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="mensaje" data-en="Message" data-es="Mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="hero-button" data-en="Send Message" data-es="Enviar Mensaje">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
     
     <!--Footer-->
 <footer class="footer">
