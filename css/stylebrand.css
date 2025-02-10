@@ -6,6 +6,7 @@
 }
 
 body {
+    font-synthesis: none; /* Evita que Chrome cambie las fuentes al traducir */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Hace que el body ocupe al menos la altura completa de la ventana */
@@ -148,7 +149,7 @@ ul {
 
 
 .lectura {
-    font-size: 0.9em;
+    font-size: 20px;
     color: #555;
     margin: 10px 0; /* Espacio superior e inferior */
 }

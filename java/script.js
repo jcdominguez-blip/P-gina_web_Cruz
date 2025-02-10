@@ -147,4 +147,20 @@ function toggleLanguage() {
     });
 }
 
+// Smooth Scroll para enlaces internos
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        const targetId = this.getAttribute('href'); // Obtiene el ID del objetivo
+        const targetElement = document.querySelector(targetId); // Selecciona el elemento objetivo
+
+        if (targetElement) {
+            // Desplazamiento suave
+            targetElement.scrollIntoView({
+                behavior: 'smooth', // Desplazamiento suave
+                block: 'start' // Alinea el elemento en la parte superior de la ventana
+            });
+        }
+    });
+});
 

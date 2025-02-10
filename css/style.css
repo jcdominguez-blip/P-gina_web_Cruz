@@ -2,15 +2,26 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "neue-haas-grotesk-display","cofo-sans-mono-variable", sans-serif;
-
+        font-family: 'neue-haas-grotesk-display', 'cofo-sans-mono-variable', sans-serif;
+        
     
 
 body {
     
-    background-color: #fff;
+    font-family: "neue-haas-grotesk-display", "cofo-sans-mono-variable", sans-serif;
+    font-display: swap;
+    font-synthesis: none; /* Evita que Chrome cambie las fuentes al traducir */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FFFDF3;
     color: #000;
 }
+
+
+
+
+
+
 
 .navbar {
     flex-direction: row; /* Asegura que los elementos estén en fila *
@@ -220,6 +231,7 @@ body {
     font-weight: 10;
     font-size: 20px;
     color: #838383;
+    font-display: swap;
 }
 
 .subtitulosIconos{
