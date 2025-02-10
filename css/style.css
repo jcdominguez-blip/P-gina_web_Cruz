@@ -758,6 +758,6 @@ hr.decorative-line {
 @media (max-width: 576px) {
     #typewriter {
         font-size: 40px; /* Tamaño de fuente para móviles pequeños */
-        letter-spacing: 0; /* Reducir espaciado entre letras */
+        
     }
 }
