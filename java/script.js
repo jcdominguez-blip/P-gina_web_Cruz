@@ -164,3 +164,48 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Función para el efecto de máquina de escribir
+function typeWriterEffect() {
+    const typewriterElement = document.getElementById('typewriter');
+    const texts = ["HELLO WORD", "Studio Cruz"]; // Textos a mostrar
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentText = texts[textIndex];
+
+        if (!isDeleting) {
+            // Escribir el texto
+            typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+
+            // Si se ha escrito todo el texto, comenzar a borrar
+            if (charIndex === currentText.length) {
+                isDeleting = true;
+                setTimeout(type, 1000); // Esperar 1 segundo antes de borrar
+            } else {
+                setTimeout(type, 100); // Velocidad de escritura
+            }
+        } else {
+            // Borrar el texto
+            typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+
+            // Si se ha borrado todo el texto, pasar al siguiente texto
+            if (charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length; // Cambiar al siguiente texto
+                setTimeout(type, 500); // Esperar 0.5 segundos antes de escribir el siguiente texto
+            } else {
+                setTimeout(type, 50); // Velocidad de borrado
+            }
+        }
+    }
+
+    // Iniciar la animación
+    type();
+}
+
+// Ejecutar la función cuando la página esté cargada
+document.addEventListener('DOMContentLoaded', typeWriterEffect);

@@ -19,7 +19,29 @@ body {
 
 
 
+/* Estilos para el efecto de máquina de escribir */
+#typewriter {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    color: #FFFDF3;
+    overflow: hidden; /* Oculta el texto que se desborda */
+    border-right: 0.15em solid #FFFDF3; /* Cursor parpadeante */
+    white-space: nowrap; /* Evita saltos de línea */
+    margin: 0 auto; /* Centra el texto */
+    letter-spacing:0; /* Espaciado entre letras */
+    animation: blink-caret 0.75s step-end infinite; /* Animación del cursor */
+}
 
+/* Animación del cursor parpadeante */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #FFFDF3;
+    }
+}
 
 
 
