@@ -577,6 +577,10 @@ hr.decorative-line {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
+
+
+
+    
     /* Ajustes generales */
     body {
         font-size: 14px; /* Tamaño de fuente base más pequeño */
@@ -732,3 +736,28 @@ hr.decorative-line {
     }
 }
 
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    #typewriter {
+        font-size: 120px; /* Tamaño de fuente para pantallas medianas */
+    }
+}
+
+@media (max-width: 992px) {
+    #typewriter {
+        font-size: 90px; /* Tamaño de fuente para tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    #typewriter {
+        font-size: 60px; /* Tamaño de fuente para móviles grandes */
+    }
+}
+
+@media (max-width: 576px) {
+    #typewriter {
+        font-size: 40px; /* Tamaño de fuente para móviles pequeños */
+        letter-spacing: 0; /* Reducir espaciado entre letras */
+    }
+}
