@@ -6,12 +6,12 @@
 }
 
 body {
-    font-synthesis: none; /* Evita que Chrome cambie las fuentes al traducir */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Hace que el body ocupe al menos la altura completa de la ventana */
-    background-color: #fff;
-    color: #000
+    min-height: 100vh;
+    background-color: #FFFDF3;
+    color: #000;
 }
 
 /*navbarstyle---------------------------------------------------------*/
@@ -47,7 +47,7 @@ body {
 }
 
 .containerNav {
-    max-width: 800px; /* Ancho máximo */
+    max-width: 1800px; /* Ancho máximo */
     margin: 0 auto; /* Centrar el contenedor */
     width: 100%; /* Ocupar el ancho completo */
     display: flex; /* Usar flexbox */
@@ -113,7 +113,7 @@ body {
 }
 
 .works-section-brand {
-    
+        
     display: flex;
     justify-content: space-between; /* Asegura que haya espacio entre la lista y la imagen */
 }
@@ -238,7 +238,7 @@ ul {
 }
 
 .modal-content {
-    max-width: 70%; /* Asegúrate de que no exceda el ancho de la ventana */
+    max-width: 60%; /* Asegúrate de que no exceda el ancho de la ventana */
     max-height: 90%; /* Limitar la altura del contenido */
     overflow: auto; /* Permitir desplazamiento si es necesario */
 }
@@ -372,6 +372,7 @@ ul {
         right: 0;
         background-color: #1D1E1C; /* Fondo oscuro */
         z-index: 1000; /* Asegurar que esté por encima */
+        flex-wrap: wrap; /* Permitir que los enlaces se envuelvan si es necesario */
     }
 
     .nav-links-brands.active {

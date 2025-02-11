@@ -17,20 +17,30 @@ body {
     color: #000;
 }
 
-
-
-/* Estilos para el efecto de máquina de escribir */
+/* Contenedor del tipo de letra y cursor */
 #typewriter {
+    display: inline-block; /* Permite que el cursor esté alineado con el texto */
+    position: relative; /* Posiciona el cursor relativo al texto */
+}
+
+/* Estilo para el texto */
+#text {
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-size: 120px;
     font-weight: 700;
     color: #FFFDF3;
-    overflow: hidden; /* Oculta el texto que se desborda */
-    border-right: 0.15em solid #FFFDF3; /* Cursor parpadeante */
     white-space: nowrap; /* Evita saltos de línea */
-    margin: 0 auto; /* Centra el texto */
-    letter-spacing:0; /* Espaciado entre letras */
-    animation: blink-caret 0.75s step-end infinite; /* Animación del cursor */
+    margin: 0; /* Elimina margen */
+    display: inline; /* Permite que el cursor esté al lado */
+}
+
+/* Estilos para la barra titilante */
+#cursor {
+    display: inline-block; /* Permite que se comporte como un elemento en línea */
+    border-bottom: 0.05em solid #FFFDF3; /* Cursor parpadeante horizontal */
+    margin-left: 5px; /* Espacio entre el texto y el cursor */
+    animation: blink-caret 0.90s step-end infinite; /* Animación del cursor */
+    height: 1em; /* Ajusta la altura del cursor */
 }
 
 /* Animación del cursor parpadeante */
@@ -42,6 +52,7 @@ body {
         border-color: #FFFDF3;
     }
 }
+
 
 
 
