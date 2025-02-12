@@ -105,7 +105,7 @@ body {
 }
 
 .data-title{
-
+    
     font-size: 0.9em;
     color: #555;
     
@@ -204,7 +204,7 @@ ul {
 }
 
 .gallery img {
-    width: 100%; /* Se ajusta al ancho del contenedor */
+    width: 96%; /* Se ajusta al ancho del contenedor */
     height: auto; /* Mantiene la proporción */
     border-radius: 5px; /* Esquinas redondeadas */
     cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
@@ -343,7 +343,7 @@ ul {
 @media (max-width: 768px) {
 
 
-
+   
    
    /* Ocultar logo en responsive */
    .logo {
@@ -408,7 +408,17 @@ ul {
         text-align: center; /* Centrar la imagen */
     }
 
-    .subtitulo {
-        text-align: center; /* Centrar el subtítulo */
+    
+
+    
+    
+    .titulo-proyecto {
+        
+        width: 100%; /* Asegura que el título ocupe el ancho completo */
+    }
+    
+    .lectura { /* Supongo que esta es la clase de la descripción */
+        text-align: left; /* Justifica la descripción a la izquierda */
+        width: 100%; /* Asegura que la descripción ocupe el ancho completo */
     }
 }   
