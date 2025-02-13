@@ -15,6 +15,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #FFFDF3;
     color: #000;
+    cursor: crosshair; /*cursor + */
 }
 
 /* Contenedor del tipo de letra y cursor */
@@ -51,6 +52,20 @@ body {
     50% {
         border-color: #FFFDF3;
     }
+}
+
+/*estilo cursor*/
+
+.crosshair {
+    cursor: crosshair;
+}
+
+/* Cursor en forma de cruz */
+
+
+/* Cursor en forma de localización */
+.link-location {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="%23FFF"/></svg>') 5 5, auto; /* Ajusta el tamaño si es necesario */
 }
 
 

@@ -207,5 +207,19 @@ function typeWriterEffect() {
     type();
 }
 
-// Ejecutar la función cuando la página esté cargada
+// Ejecutar la función cuando la página esté cargada //////////////
 document.addEventListener('DOMContentLoaded', typeWriterEffect);
+
+// Cursor //////////////////////////////////////////////
+
+const links = document.querySelectorAll('.nav-links a');
+
+links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        document.body.classList.add('link-location');
+    });
+
+    link.addEventListener('mouseleave', () => {
+        document.body.classList.remove('link-location');
+    });
+});
