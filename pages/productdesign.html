@@ -28,7 +28,7 @@
 
     <nav class="navbar-brand">
         <div class="containerNav">
-            <a href="../index.html" class="logo link-location" data-es="Estudio Cruz ®" data-en="Studio Cruz ®">Studio Cruz ®</a>
+            <a href="../index.html" class="logo link-location" data-es="Estudio Cruz ®" data-en="Studio Cruz ®">Estudio Cruz ®</a>
             
             <!-- responsive hamburguer menu CSS -->
             <div class="menu-toggle" id="mobile-menu">
@@ -39,9 +39,9 @@
 
             <!--<div class="logo">Logo</div>-->
             <ul class="nav-links-brands" id="nav-links">
-                <li><a href="../index.html" class="link-location" data-en="[00] Home" data-es="[00] Inicio">[00] Home</a></li>
-                <li><a href="./brandworks.html" class="link-location" data-en="[01] Brand design" data-es="[01] Diseño de marca">[01] Brand design</a></li>                
-                <li><a href="#contact" class="link-location" data-en="[03] Front end Developer" data-es="[03] Desarrollo Front end">[03] Front end Developer</a></li>
+                <li><a href="../index.html" class="link-location" data-en="[00] Home" data-es="[00] Inicio">[00] Inicio</a></li>
+                <li><a href="./brandworks.html" class="link-location" data-en="[01] Brand design" data-es="[01] Diseño de marca">[01] Diseño de marca</a></li>                
+                <li><a href="#contact" class="link-location" data-en="[03] Front end Developer" data-es="[03] Desarrollo Front end">[03] Desarrollo Front end</a></li>
             </ul>
         </div>
     </nav>
@@ -69,6 +69,27 @@
 
                 <li>
                     <div class="accordion" onclick="showProjectDetails(this)">
+                        <span class="titulo-proyecto" 
+                              data-title="AUREA" 
+                              data-description="Un innovador proyecto independiente de divulgación científica que se presenta como una revista digital. Nuestro objetivo es informar de manera entretenida y accesible, abordando temas de índole científica con un enfoque atractivo.
+                              El diseño de Aurea ha sido cuidadosamente elaborado para ser funcional y de impacto, garantizando que la información no solo sea clara y comprensible, sino que también capte la atención del lector. Cada edición está pensada para fomentar el interés y la curiosidad, convirtiendo el aprendizaje en una experiencia visual y dinámica.
+                              A través de un estilo moderno y una presentación cuidada, Aurea se posiciona como una plataforma donde la ciencia se vuelve accesible y emocionante para todos" 
+                              data-images='["https://i.ibb.co/TMXVptDr/AUR14.png", "https://i.ibb.co/XxgN2CDM/AUR1.png", "https://i.ibb.co/27RTq5yV/AUR12.png", "https://i.ibb.co/sZCVRjN/AUR13.png"]' 
+                              data-videos='["https://www.youtube.com/embed/38dfV63i0hY?si=dLpCP93697mJjj5J"]'
+                            <p class="cintillo">[2024]</p> AUREA
+                        </span>                       
+                    </div>
+                    <div class="accordion-content">
+                        <p class="lectura">Descripción del Proyecto 3</p>
+                        <div id="project-video" style="display: none; text-align: center; margin: 20px 0;">
+                            <iframe id="video-iframe" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <hr class="decorative-line">
+                </li>
+
+                <li>
+                    <div class="accordion" onclick="showProjectDetails(this)">
                         <span class="titulo-proyecto" data-title="App Unión ferroviaria" data-description="En nuestra búsqueda por mejorar la experiencia de los usuarios, hemos rediseñado la aplicación de la Unión Ferroviaria, optimizando su interfaz y funcionalidad. Este nuevo enfoque se centra en crear una experiencia más intuitiva, permitiendo a los usuarios navegar de manera sencilla y eficiente. Con el objetivo de potenciar la conectividad y la satisfacción del cliente, el rediseño de la app refleja nuestro compromiso con la innovación y la accesibilidad, asegurando que cada usuario disfrute de un servicio de calidad." data-images='["https://i.ibb.co/gLQyF09X/UFAPP4.jpg", "https://i.ibb.co/v4VZ0pkr/UFAPP2.jpg", "https://i.ibb.co/dJwBP4yF/UFAPP.jpg", "https://i.ibb.co/qLMBLkgC/UFAPP3.jpg"]' data-videos='[]'>                         
                             <p class="cintillo">[2023]</p> App Unión ferroviaria                                                         
                         </span>
@@ -93,7 +114,8 @@
 
                 <li>
                     <div class="accordion" onclick="showProjectDetails(this)">
-                        <span class="titulo-proyecto" data-title="Typefusion®" 
+                        <span class="titulo-proyecto" 
+                              data-title="Typefusion®" 
                               data-description="typefusion® es una innovadora aplicación diseñada para simplificar la búsqueda de fuentes tipográficas para cualquier tipo de proyecto. Con un enfoque en un diseño funcional y amigable, typefusion permite a los usuarios explorar y seleccionar tipografías de manera eficiente, optimizando su flujo de trabajo creativo." 
                               data-images='["https://i.ibb.co/1tBtbRyC/TF14.jpg", "https://i.ibb.co/yF5HwTHz/TF12.jpg", "https://i.ibb.co/xqdhLVRY/TF13.jpg", "https://i.ibb.co/KjsBTZrH/TF1.jpg"]' 
                               data-videos='["https://www.youtube.com/embed/RL5hSBY7PZY"]'>
@@ -102,13 +124,15 @@
                     </div>
                     <div class="accordion-content">
                         <p class="lectura">Descripción del Proyecto 3</p>
-                        <div id="project-video" style="display: none; text-align: center;">
-                            <iframe id="video-iframe" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                        <div id="project-video" style="display: none; text-align: center; margin: 20px 0;">
+                            <iframe id="video-iframe" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <hr class="decorative-line">
                 </li>
-                
+
+               
+
             </ul>
         </div>
         <div class="works-image col-md-8 d-flex flex-column align-items-start">

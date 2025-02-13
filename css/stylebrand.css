@@ -210,7 +210,19 @@ ul {
     cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
 }
 
+/* Opciones de tamaño de video */
 
+#project-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+#video-iframe {
+    max-width: 100%; /* Asegura que no sobrepase el ancho del contenedor */
+    height: 400px; /* Altura ajustada */
+}
 
 /* Opciones de tamaño de imagen */
 .small {
