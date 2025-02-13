@@ -7,29 +7,48 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
 
 
 
-
-
-// Función para mostrar detalles del proyecto
 function showProjectDetails(element) {
-    const title = element.querySelector('span').getAttribute('data-title');
-    const description = element.querySelector('span').getAttribute('data-description');
-    const images = JSON.parse(element.querySelector('span').getAttribute('data-images'));
+    // Obtener los datos del proyecto
+    const title = element.querySelector('.titulo-proyecto').dataset.title;
+    const description = element.querySelector('.titulo-proyecto').dataset.description;
+    const images = JSON.parse(element.querySelector('.titulo-proyecto').dataset.images);
+    const videos = JSON.parse(element.querySelector('.titulo-proyecto').dataset.videos);
 
+    // Asignar el título y la descripción
     document.getElementById('project-title').innerText = title;
-    document.getElementById('project-description').innerText = description; // Este es el párrafo donde se mostrará la descripción
+    document.getElementById('project-description').innerText = description;
 
+    // Limpiar la galería de imágenes y videos
     const gallery = document.getElementById('project-gallery');
-    gallery.innerHTML = ''; // Limpiar la galería anterior
+    gallery.innerHTML = '';
 
-    // Generar imágenes de la galería
+    // Mostrar imágenes en la galería
     images.forEach(image => {
-        const img = document.createElement('img');
-        img.src = image;
-        img.alt = title;
-        img.classList.add('small'); // Cambia según el tamaño deseado
-        img.onclick = () => openModal(image); // Función para abrir el modal
-        gallery.appendChild(img);
+        const imgElement = document.createElement('img');
+        imgElement.src = image;
+        imgElement.alt = title;
+        imgElement.onclick = () => openModal(image);
+        gallery.appendChild(imgElement);
     });
+
+    // Mostrar videos en la galería
+    videos.forEach(video => {
+        const videoElement = document.createElement('iframe');
+        videoElement.src = video;
+        videoElement.width = "560";
+        videoElement.height = "315";
+        videoElement.frameBorder = "0";
+        videoElement.allowFullscreen = true;
+        gallery.appendChild(videoElement);
+    });
+
+    // Si hay videos, mostrarlos
+    if (videos.length > 0) {
+        document.getElementById('project-video').style.display = 'block';
+        document.getElementById('video-iframe').src = videos[0]; // Muestra el primer video
+    } else {
+        document.getElementById('project-video').style.display = 'none';
+    }
 }
 
 // Función para abrir el modal
@@ -53,37 +72,32 @@ window.onclick = function(event) {
         closeModal();
     }
 }
-//footer-clock//
 
+// Footer clock
+function updateClock() {
+    const now = new Date();
+    const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    document.getElementById('clock').textContent = now.toLocaleTimeString('es-AR', options);
+}
+setInterval(updateClock, 1000);
+updateClock(); // Update clock immediately on load
 
-        function updateClock() {
-            const now = new Date();
-            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
-            document.getElementById('clock').textContent = now.toLocaleTimeString('es-AR', options);
-        }
-        setInterval(updateClock, 1000);
-        updateClock(); // Update clock immediately on load
+// Botón de lenguaje
+let currentLanguage = 'es'; // Idioma por defecto
 
-    //boton lenguaje//
+document.getElementById('language-toggle').addEventListener('click', function() {
+    currentLanguage = currentLanguage === 'es' ? 'en' : 'es'; // Cambiar el idioma
 
-    let currentLanguage = 'es'; // Idioma por defecto
+    // Cambiar el texto del botón
+    this.textContent = currentLanguage === 'es' ? 'Español' : 'English';
 
-    document.getElementById('language-toggle').addEventListener('click', function() {
-        currentLanguage = currentLanguage === 'es' ? 'en' : 'es'; // Cambiar el idioma
-
-        // Cambiar el texto del botón
-        this.textContent = currentLanguage === 'es' ? 'Español' : 'English';
-
-        // Cambiar el texto de los elementos
-        document.querySelectorAll('[data-en]').forEach(el => {
-            el.textContent = el.getAttribute(currentLanguage === 'es' ? 'data-es' : 'data-en');
-        });
+    // Cambiar el texto de los elementos
+    document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(currentLanguage === 'es' ? 'data-es' : 'data-en');
     });
+});
 
-   
-
-//nuevo description//
-
+// Nuevo description
 document.addEventListener('DOMContentLoaded', function() {
     const languageToggle = document.getElementById('language-toggle');
     const elementsToTranslate = document.querySelectorAll('[data-title-en], [data-title-es], [data-description-en], [data-description-es]');
@@ -124,5 +138,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Evento para cambiar el idioma al hacer clic en el botón
     languageToggle.addEventListener('click', toggleLanguage);
 });
-
-

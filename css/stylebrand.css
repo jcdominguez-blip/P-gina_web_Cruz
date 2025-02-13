@@ -210,6 +210,8 @@ ul {
     cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
 }
 
+
+
 /* Opciones de tamaño de imagen */
 .small {
     max-width: 100px; /* Ajusta según lo necesites */
@@ -337,6 +339,16 @@ ul {
     font-family: "cofo-sans-mono-variable";
     font-size: 14px; /* Ajusta el tamaño de la fuente según sea necesario */
     color: #838383;
+}
+
+/*video*/
+
+
+
+iframe {
+    display: block; /* Asegura que el iframe se muestre correctamente */
+    max-width: 100%; /* Asegura que no se desborde */
+    height: auto; /* Mantiene la proporción */
 }
 
 /* Media queries */
