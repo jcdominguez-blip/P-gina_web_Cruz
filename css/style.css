@@ -652,12 +652,12 @@ hr.decorative-line {
 
     /* Hero Section */
     .hero {
-        height: auto; /* Altura automática */
+        min-height: 80vh; /* Reduce la altura a 80% en pantallas más pequeñas */
         padding: 60px 20px; /* Espaciado interno */
     }
 
     .hero-title {
-        font-size: 60px; /* Tamaño de fuente más pequeño */
+        font-size: 100px; /* Tamaño de fuente más pequeño */
     }
 
     .hero-subtitle {
@@ -783,7 +783,7 @@ hr.decorative-line {
 
 @media (max-width: 576px) {
     #typewriter {
-        font-size: 40px; /* Tamaño de fuente para móviles pequeños */
+        font-size: 90px; /* Tamaño de fuente para móviles pequeños */
         
     }
 }
