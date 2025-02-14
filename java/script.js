@@ -167,7 +167,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Función para el efecto de máquina de escribir
 function typeWriterEffect() {
     const typewriterElement = document.getElementById('typewriter');
-    const texts = ["HELLO WORD", "Studio Cruz"]; // Textos a mostrar
+    const texts = ["HELLO WORD", "Estudio Cruz"]; // Textos a mostrar
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
