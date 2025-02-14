@@ -2,7 +2,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'neue-haas-grotesk-display', 'cofo-sans-mono-variable', sans-serif;
+        font-family: 'neue-haas-grotesk-display', 'cofo-sans-mono-variable', 'chivo',  sans-serif;
         
     
 
@@ -20,6 +20,8 @@ body {
 
 /* Contenedor del tipo de letra y cursor */
 #typewriter {
+
+    font-family: 'Chivo';
     display: inline-block; /* Permite que el cursor esté alineado con el texto */
     position: relative; /* Posiciona el cursor relativo al texto */
 }
@@ -177,10 +179,16 @@ body {
 }
 
 .hero-title {
+    
     font-weight: 700;
     font-size: 150px;
     margin-bottom: 10px;
     color: #FFFDF3;
+}
+
+.tipe {
+
+    font-family: 'Chivo',
 }
 
 .hero-subtitle {
