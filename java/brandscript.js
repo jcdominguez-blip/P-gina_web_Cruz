@@ -138,3 +138,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Evento para cambiar el idioma al hacer clic en el botón
     languageToggle.addEventListener('click', toggleLanguage);
 });
+
+
