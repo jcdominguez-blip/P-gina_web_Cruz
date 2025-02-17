@@ -673,18 +673,31 @@ body {
 
 /* About Me Section */
 .about-me {
-    flex-direction: column; /* Cambiar a disposición vertical */
-    padding: 20px; /* Reducir el padding */
+    flex-direction: column; /* Cambia a columna para mejor adaptación */
+    align-items: center; /* Centra contenido horizontalmente */
 }
 
 .about-content {
-    padding-right: 0; /* Eliminar el padding derecho */
-    margin-bottom: 20px; /* Espaciado inferior */
+    padding: 10%;
+    padding-left: 0%;
+    width: 100%; /* Asegura que ocupe el 100% del ancho */
+    
+    
+}
+
+.about-image {
+    margin-top: 20px; /* Agrega espacio entre contenido y la imagen */
+    flex: 1 0 100%; /* Hace que ocupe el 100% del ancho en pantallas pequeñas */
+    display: flex; /* Mantiene el display flex */
+    justify-content: center; /* Centra la imagen */
 }
 
 .about-image img {
-    max-width: 80%; /* Reducir el tamaño de la imagen */
+    max-width: 200%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: auto; /* Permite que la imagen se ajuste adecuadamente */
 }
+
 
 /* Works Section */
 .works-section {
