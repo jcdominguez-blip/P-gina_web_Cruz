@@ -62,7 +62,17 @@ from, to {
 cursor: crosshair;
 }
 
-/* Cursor en forma de cruz */
+/* color cursor */
+
+::selection {
+    background-color: #FFD700; /* Color de fondo al seleccionar */
+    color: #000; /* Color del texto al seleccionar */
+}
+
+::-moz-selection { 
+    background-color: #FFD700; 
+    color: #000; 
+}
 
 
 /* Cursor en forma de localización */
